@@ -25,7 +25,7 @@ function Testimonials() {
     },
   ];
   return (
-    <section className="py-[75px] bg-[#F3F4F6]">
+    <section id="company" className="py-[75px] bg-[#F3F4F6]">
       <div className="testimonials__container mx-auto max-w-[1250px] px-4">
         <h1 className="text-[#3d0072] text-[45px] md:text-[60px] font-bold lg:font-extrabold lg:text-[75px]">
           Don’t Take Our <span className="text-[#E8356D]">Word</span> For It{" "}

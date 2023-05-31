@@ -1,5 +1,7 @@
 import frame from "../assets/Frame 2834.png";
+import { useNavigate } from "react-router-dom";
 function Investment() {
+  const navigate = useNavigate();
   return (
     <section
       id="business"
@@ -14,7 +16,10 @@ function Investment() {
           Plan towards your future by investing with ardilla, Grow your money
           confidently and securely with the available investment oppurtuinities
         </p>
-        <button className="group  hover:bg-[#8807F7] transititon duration-300 hover:text-white mt-[24px] flex rounded-full items-center lg:mt-[30px] py-[15px] px-[20px] text-[15px] border-[1px] border-[#8807f7] text-[#8807f7]">
+        <button
+          onClick={() => navigate("/career-page")}
+          className="group  hover:bg-[#8807F7] transititon duration-300 hover:text-white mt-[24px] flex rounded-full items-center lg:mt-[30px] py-[15px] px-[20px] text-[15px] border-[1px] border-[#8807f7] text-[#8807f7]"
+        >
           <span>Invest with ardilla (Coming Soon)</span>{" "}
           <span className="ml-3">
             <img src={frame} alt="frame" />

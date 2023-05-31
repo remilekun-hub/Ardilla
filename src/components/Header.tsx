@@ -69,7 +69,7 @@ function Header() {
                 Beta
               </span>
             </a>
-            <a href="/" className="text-[14px]">
+            <a href="#company" className="text-[14px]">
               Company
             </a>
             <a href="#learn" className="text-[14px]">

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import phone from "../assets/phone.png";
 function Hero() {
   return (
@@ -14,9 +15,12 @@ function Hero() {
               funds
             </p>
 
-            <button className="z-[10] transition duration-300 hover:bg-[#8807F7] hover:text-white mt-[17px] bg-white font-semibold rounded-full text-[#3d0072] h-[53px] w-[169px]">
+            <Link
+              to="/landing-page"
+              className="z-[10] inline-block px-[10px] py-[14px] text-center transition duration-300 hover:bg-[#8807F7] hover:text-white mt-[17px] bg-white font-semibold rounded-full text-[#3d0072] w-[169px]"
+            >
               Get Started
-            </button>
+            </Link>
           </div>
         </div>
 
