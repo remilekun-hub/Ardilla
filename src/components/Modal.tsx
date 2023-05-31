@@ -32,8 +32,8 @@ function Modal({ setOpenModal }: ModalProp) {
           </button>
 
           <img src={verified} alt="verified" className="mx-auto" />
-          <div className="flex items-center justify-center w-full gap-[20px] mt-[35px] mb-[30px]">
-            <img src={cap} alt="confetti" />
+          <div className="flex items-center justify-center w-full text-center gap-[5px] mt-[35px] mb-[30px]">
+            <img src={cap} alt="confetti" className="mt-[5px]" />
             <h3 className="text-[#22C55E] font-semibold text-[30px] font-serif leading-[31px] text-center">
               Great!! You’re on the waitlist{" "}
             </h3>
