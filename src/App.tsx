@@ -1,28 +1,44 @@
 import "./App.css";
-
+import { lazy, Suspense } from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Homepage from "./pages/Homepage";
-import InterestCalculator from "./pages/InterestCalculator";
-import CareerPage from "./pages/CareerPage";
-import LandingPage from "./pages/LandingPage";
+const LazyInterestCalculator = lazy(() => import("./pages/InterestCalculator"));
+const LazyCareerPage = lazy(() => import("./pages/CareerPage"));
+const LazyLandingPage = lazy(() => import("./pages/LandingPage"));
+const LazyHomePage = lazy(() => import("./pages/Homepage"));
 
 function App() {
   const router = createBrowserRouter([
     {
       path: "/",
-      element: <Homepage />,
+      element: (
+        <Suspense fallback="Loading...">
+          <LazyHomePage />
+        </Suspense>
+      ),
     },
     {
       path: "/landing-page",
-      element: <LandingPage />,
+      element: (
+        <Suspense fallback="Loading...">
+          <LazyLandingPage />
+        </Suspense>
+      ),
     },
     {
       path: "/interest-calculator",
-      element: <InterestCalculator />,
+      element: (
+        <Suspense fallback="Loading...">
+          <LazyInterestCalculator />
+        </Suspense>
+      ),
     },
     {
       path: "/career-page",
-      element: <CareerPage />,
+      element: (
+        <Suspense fallback="Loading...">
+          <LazyCareerPage />
+        </Suspense>
+      ),
     },
   ]);
   return <RouterProvider router={router} />;
