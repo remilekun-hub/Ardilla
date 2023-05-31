@@ -4,7 +4,6 @@ import iphone from "../assets/right.png";
 import yellow from "../assets/yellow.png";
 import { useEffect, useState } from "react";
 import Modal from "../components/Modal";
-import hamburger from "../assets/hamburger.svg";
 
 function LandingPage() {
   const [openModal, setOpenModal] = useState(false);
