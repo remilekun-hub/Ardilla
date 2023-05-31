@@ -6,16 +6,17 @@ const CareerPage = () => {
   return (
     <main>
       <Header />
-      <section className="bg-[#8807F7] min-h-[100vh]">
-        <div className="max-w-[1250px] mx-auto w-full px-4">
-          <div className="py-[160px] lg:ml-[180px] ml-[0px]  flex justify-center relative flex-col ">
-            <div className="bg-[#F59E0B] rounded-md text-white font-bold lg:text-[80px] text-[40px] w-full max-w-[841px] pt-[50px] pr[200px">
+      <section className="bg-[#8807F7] pt-[70px] pb-[90px] mb:py-[100px] lg:pt-[80px] lg:pb-[130px]">
+        <div className="max-w-[1250px] px-4 mx-auto h-full">
+          <div className="flex flex-col justify-center max-w-[1035px] mx-auto">
+            <div className="bg-[#F59E0B] font-sans rounded-md text-white font-medium lg:text-[80px] text-[30px] md:text-[55px] w-full max-w-[841px] pt-[50px]">
               Join us in shaping...
             </div>
-            <div className="bg-[#E8356D] rounded-md text-white font-bold lg:text-[80px] text-[40px] w-full max-w-[612px] self-end pt-[50px] pr[200px]">
+            <div className="bg-[#E8356D] rounded-md font-sans text-white font-medium lg:text-[80px] text-[30px] md:text-[55px] w-full max-w-[612px] self-end pt-[50px]">
               The Future..
             </div>
-            <div className="bg-[#0D9488] rounded-md text-white font-bold lg:text-[80px] text-[40px] w-full max-w-[613px] pt-[50px] absolute bottom-2  pr[200px]">
+
+            <div className="mt-[-10px] bg-[#0D9488] self-start rounded-md text-white font-medium lg:text-[80px] text-[30px] md:text-[55px] w-full max-w-[613px] pt-[50px]">
               Of Finance...
             </div>
           </div>
@@ -200,10 +201,75 @@ const CareerPage = () => {
             necessary tools needed to get the best results.
           </div>
           <h1 className="font-bold text-center text-[30px] lg:text-[50px] skew-y-6 text-white">
-            PERKS
+            Perks
           </h1>
+
+          <div className="lg:hidden pb-[70px] text-white mt-[50px]  gap-10  grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 justify-center">
+            <div className="w-full text-white">
+              <div className="w-[30px] h-[30px]">
+                <img src="/vibe.png" className="w-full h-full" alt="" />
+              </div>
+              <p className="text-white text-xl font-bold my-3">It's a vibe</p>
+              <p className="text-sm text-white leading-2">
+                Our work culture is a vibe and more
+              </p>
+            </div>
+            <div className="w-full">
+              <div className="w-[30px] h-[30px]">
+                <img src="/gadget.png" className="w-full h-full" alt="" />
+              </div>
+              <p className="text-white text-xl font-bold my-3">Cool gadget</p>
+              <p className="text-sm text-white leading-2">
+                You get to work with cool new gadgets
+              </p>
+            </div>
+            <div className="w-full">
+              <div className="w-[30px] h-[30px]">
+                <img src="/health.png" className="w-full h-full" alt="" />
+              </div>
+              <p className="text-white text-xl font-bold my-3">
+                Health benefits
+              </p>
+              <p className="text-sm text-white leading-2">
+                We know health is important. So we provided easy access and
+                affordable health benefits
+              </p>
+            </div>
+            <div className="w-full">
+              <div className="w-[30px] h-[30px]">
+                <img src="/team.png" className="w-full h-full" alt="" />
+              </div>
+              <p className="text-white text-xl font-bold my-3">Team Bounding</p>
+              <p className="text-sm text-white leading-2">
+                We always make out time for fun and getting to know your team
+                mates better.
+              </p>
+            </div>
+            <div className="w-full">
+              <div className="w-[30px] h-[30px]">
+                <img src="/diversity.png" className="w-full h-full" alt="" />
+              </div>
+              <p className="text-white text-xl font-bold my-3">Diversity</p>
+              <p className="text-sm text-white leading-2">
+                We promote diversity of ideas and people. Anyone from anywhere
+                is welcome.
+              </p>
+            </div>
+            <div className=" w-full">
+              <div className="w-[30px] h-[30px]">
+                <img src="/education.png" className="w-full h-full" alt="" />
+              </div>
+              <p className="text-white text-xl font-bold my-3">
+                Education and career progression
+              </p>
+              <p className="text-sm text-white leading-2">
+                We offer you opportunity to grow and learn and advance in your
+                career.
+              </p>
+            </div>
+          </div>
           <svg
-            className="max-w-[1450px] mx-auto"
+            className="max-w-[1450px] mx-auto hidden lg:block"
             viewBox="0 0 1342 569"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -216,9 +282,10 @@ const CareerPage = () => {
               xmlns="http://www.w3.org/2000/svg"
               width={"100%"}
               height={"100%"}
+              className="h-[900px]"
             >
               <div className=" px-[200px] mt-[200px] gap-10 left-3 grid grid-cols-2 lg:grid-cols-3 justify-center">
-                <div className="max-w-[295px] w-full">
+                <div className="w-full">
                   <div className="w-[30px] h-[30px]">
                     <img src="/vibe.png" className="w-full h-full" alt="" />
                   </div>
@@ -229,7 +296,7 @@ const CareerPage = () => {
                     Our work culture is a vibe and more
                   </p>
                 </div>
-                <div className="max-w-[295px] w-full">
+                <div className="w-full">
                   <div className="w-[30px] h-[30px]">
                     <img src="/gadget.png" className="w-full h-full" alt="" />
                   </div>
@@ -240,7 +307,7 @@ const CareerPage = () => {
                     You get to work with cool new gadgets
                   </p>
                 </div>
-                <div className="max-w-[295px] w-full">
+                <div className="w-full">
                   <div className="w-[30px] h-[30px]">
                     <img src="/health.png" className="w-full h-full" alt="" />
                   </div>
@@ -252,7 +319,7 @@ const CareerPage = () => {
                     affordable health benefits
                   </p>
                 </div>
-                <div className="max-w-[295px] w-full">
+                <div className="w-full">
                   <div className="w-[30px] h-[30px]">
                     <img src="/team.png" className="w-full h-full" alt="" />
                   </div>
@@ -264,7 +331,7 @@ const CareerPage = () => {
                     team mates better.
                   </p>
                 </div>
-                <div className="max-w-[295px] w-full">
+                <div className="w-full">
                   <div className="w-[30px] h-[30px]">
                     <img
                       src="/diversity.png"

@@ -3,9 +3,6 @@ import pexel1 from "../assets/pexel 1.jpg";
 import pexel2 from "../assets/pexel 2.jpg";
 import pexel3 from "../assets/pexel 3.jpg";
 
-// Import Swiper styles
-import "swiper/css";
-
 function Testimonials() {
   const people = [
     {

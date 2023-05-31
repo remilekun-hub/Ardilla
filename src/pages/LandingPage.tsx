@@ -29,15 +29,15 @@ function LandingPage() {
               <img src={logo} alt="" />
             </Link>
 
-            <li className="hidden md:flex items-center relative font-serif">
+            <li className="flex items-center relative font-serif">
               <span className="w-[5px] h-[5px] rounded-full bg-white mr-2" />
               <a href="#section" className="text-white ">
                 Features
               </a>
             </li>
-            <div className="block md:hidden cursor-pointer">
+            {/* <div className="block md:hidden cursor-pointer">
               <img src={hamburger} alt="" />
-            </div>
+            </div> */}
           </nav>
         </header>
 
