@@ -1,0 +1,95 @@
+/* hero section */
+
+.hero__title {
+  background: linear-gradient(91.7deg, #ffeb35 7.5%, #19fd82fc 107.24%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.bg__image {
+  background-image: url("./assets/Background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* products section */
+
+/* investment section */
+.investment__section {
+  height: 702px;
+  background-image: url("../src/assets/arrow\ and\ background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+
+.access__bottom {
+  margin-top: 100px;
+
+  background: #29014b;
+  box-shadow: 0px 10px 35px rgba(6, 46, 253, 0.25),
+    0px 15px 70px rgba(251, 64, 64, 0.25), 0px 30px 90px rgba(136, 7, 247, 0.5);
+}
+.available {
+  filter: drop-shadow(0px 12px 24px rgba(10, 7, 12, 0.1));
+}
+
+/* testimonials section  */
+.effect {
+  background-image: url("./assets/Ellipse\ 921.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.dd {
+  mix-blend-mode: multiply;
+}
+.small {
+  background: linear-gradient(139.74deg, #520bb3 49.68%, #ea00be 107.05%);
+}
+
+.lastfeature {
+  background: linear-gradient(
+    89.42deg,
+    #8807f7 10.02%,
+    #520bb3 51.06%,
+    #ea00be 111.04%
+  );
+}
+
+.one {
+  background-image: url("../src/assets/feature1.png");
+}
+.two {
+  background-image: url("../src/assets/feature2.png");
+}
+.three {
+  background-image: url("../src/assets/feature3.png");
+}
+.four {
+  background-image: url("../src/assets/feature4.png");
+}
+.five {
+  background-image: url("../src/assets/feature5.png");
+}
+.six {
+  background-image: url("../src/assets/feature6.png");
+}
+.seven {
+  background-image: url("../src/assets/feature7.png");
+}
+.eight {
+  background-image: url("../src/assets/feature8.png");
+}
+.feature {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top-center;
+  transition: 0.3s;
+  overflow: hidden;
+  height: 300px;
+}
+.feature:hover {
+  transform: translateY(-10px);
+}
